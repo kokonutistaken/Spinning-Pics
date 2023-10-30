@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+
+
+.audioBox {
+  position: absolute;
+  height: 15vh;
+  width: 16%;
+  top: 0vh;
+  left: 2%;
+  z-index: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.txt1{
+  position: absolute;
+  font-family: 'Gabarito', sans-serif;
+  font-size: 2rem;
+  left: 0%;
+
+}
+.txt2{
+  position: absolute;
+  font-family: 'Gabarito', sans-serif;
+  font-size: 2rem;
+  right: 0;
+}
+.txt1.none, .txt2.none, .volume.none{
+  display: none;
+}
+.volume{
+  position: absolute;
+  left: 40%;
+  animation: pulse 1.5s linear infinite;
+}
+@keyframes pulse {
+  0%{
+    scale: 1;
+  }
+  50%{
+    scale: 1.1;
+  }
+  100%{
+    scale: 1;
+  }
+}
+span{
+  position: absolute;
+  font-family: 'Gabarito', sans-serif;
+  font-size: 2rem;
+  left: 25%;
+}
+.svgCircle{
+  position: absolute;
+  left: 13%;
+}
+.circle.filled{
+  fill: white;
+}
